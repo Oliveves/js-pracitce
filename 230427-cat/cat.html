@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <title> 김나연 - 고양이잡지 </title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body {background-color: #999;}
+        ul, li{margin: 0; padding: 0; list-style:none;}
+        .cat {position: absolute; left: 50%; top: 50%;
+        transform: translate(-50%,-50%);}
+        .cat .slide {width: 500px; height: 250px;
+        background-color: #fff; 
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+        .cat .slide ul li a img {width: 500px;}
+
+        /* btn */
+        .cat .text {text-align: center; margin-top: 30px;}
+        .cat .text a {background-color: #000; 
+            padding: 5px 30px; /* 상하, 좌우 */
+            border-radius:50px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 13px;
+        }
+        .cat .text a:hover {background-color: #6097c2;}
+    </style>
+    <script src="./script/jquery-1.12.4.min.js"></script>
+    <script src="./script/jquery.innerfade.js"></script>
+    <script>
+        $(function(){
+           $(".inner-fade").innerfade({
+            animationtype:"fade",
+            timeout:2000
+           }) 
+        });
+    </script>
+</head>
+<body>
+    <!-- .cat>.slide+.text -->
+    <div class="cat">
+        <div class="slide">
+            <!-- ul.inner-fade>li*4>a>img -->
+            <ul class="inner-fade">
+                <li><a href="./images/cat.pdf"><img src="./images/1.svg" alt="고양이매거진1p"></a></li>
+                <li><a href="./images/cat.pdf"><img src="./images/2.svg" alt="고양이매거진2p"></a></li>
+                <li><a href="./images/cat.pdf"><img src="./images/3.svg" alt="고양이매거진3p"></a></li>
+                <li><a href="./images/cat.pdf"><img src="./images/4.svg" alt="고양이매거진4p"></a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <!-- a{미리보기} -->
+            <a href="./images/cat.pdf">미리보기</a>
+            <a href="./images/catMagazine.zip">다운받기</a>
+        </div>
+    </div>
+</body>
+</html>
