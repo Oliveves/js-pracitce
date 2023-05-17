@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+/* 좌우 */
+.slide {width: 300px; height: 300px; overflow: hidden; margin: 0 auto; position: relative;}
+.slide .slideList {width: 900px; display: flex; position: absolute; top: 0; left: 0;}
+.slide .slideList img {width: 300px}
