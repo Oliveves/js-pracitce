@@ -10,3 +10,20 @@ $(document).ready(function(){
     }, 3000);
 
 });
+
+// $(document).ready(function() {
+//     const slideImgs = $(".slideList .slideImg");
+//     let currentIndex = 0;
+  
+//     function fadeSlide() {
+//       slideImgs.eq(currentIndex).fadeOut(500, function() {
+//         currentIndex = (currentIndex + 1) % slideImgs.length;
+//         slideImgs.eq(currentIndex).fadeIn(500);
+//       });
+//     }
+  
+//     fadeSlide();
+  
+//     setInterval(fadeSlide, 3000);
+//   });
+  
