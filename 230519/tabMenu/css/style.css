@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* reset */
+* {margin: 0; padding: 0;}
+body {background-color: #ffffff;}
+ul,li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: #333333;}
+img {border: none;}
+
+/* notice, gallery */
+.contents {width: 1200px; height: 200px; margin: 0 auto;}
+.contents .noticeGallery {width: 400px; height: 200px; float: left;}
+.contents .noticeGallery h1 {float: left; font-size: 14px; 
+    margin: 10px 3px 0 0; padding: 0 30px; 
+    cursor: pointer; background-color: #ddd;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+    height: 25px; line-height: 25px;}
+.contents .noticeGallery h1.on {background-color: #0066ad; color: #ffffff;}
+.contents .noticeGallery ul {display: none; width: 400px; 
+    padding: 0 0 20px; border-top: 3px solid #0066ad; 
+    
+    position: absolute; top: 35px; }
+.contents .noticeGallery h1.on+ul {display: block;/*  display: none; */}
+.contents .noticeGallery ul.notice li {height: 30px; line-height: 30px; width: 400px;
+border-bottom: 1px dashed #e7e7e7; text-indent: 10px;}
+.contents .noticeGallery ul.notice li a {font-size: 14px; }
+.contents .noticeGallery ul.notice li a:hover {color: #0066ad;
+    text-decoration: underline;
+    }    
+.contents .noticeGallery ul.notice li span {font-size: 12px; 
+    float: right; color: #999; padding: 0 10px;}
+
+/* gallery */
+.contents .noticeGallery ul.gallery {position: absolute; top: 35px;}
+.contents .noticeGallery ul.gallery li {float: left; margin-left: 10px; margin-top: 10px;}
+.contents .noticeGallery ul.gallery li a:hover {opacity: 0.5; transition: 0.5s;}
+.contents .noticeGallery ul.gallery li img {width: 120px; height: 147px;}
+
+
+.contents .banner1 {float: left;}
+.contents .banner2 {float: left;}
