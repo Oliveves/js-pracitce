@@ -9,7 +9,7 @@ img {border: none;}
 
 /* notice, gallery */
 .contents {width: 1200px; height: 200px; margin: 0 auto;}
-.contents .noticeGallery {width: 400px; height: 200px; float: left;}
+.contents .noticeGallery {width: 400px; height: 200px; float: left; position: relative;}
 .contents .noticeGallery h1 {float: left; font-size: 14px; 
     margin: 10px 3px 0 0; padding: 0 30px; 
     cursor: pointer; background-color: #ddd;
